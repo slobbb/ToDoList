@@ -1,0 +1,249 @@
+.task {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+    border-radius: 10px;
+    min-height: 5vh;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+        border: 0;
+        margin-top: 20px;
+        transform: scale(1);
+        transition: 0.5s ease-in;
+}
+
+.task:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+
+.checkbox {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox-wrapper-31:hover .check {
+    stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper-31 {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.checkbox-wrapper-31 .background {
+    fill: #ccc;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+}
+
+.checkbox-wrapper-31 .stroke {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+    stroke-dashoffset: 100;
+    stroke-dasharray: 100;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+}
+
+.checkbox-wrapper-31 .check {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    stroke-dashoffset: 22;
+    stroke-dasharray: 22;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+}
+
+.checkbox-wrapper-31 input[type=checkbox] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    -appearance: none;
+    -webkit-appearance: none;
+}
+
+.checkbox-wrapper-31 input[type=checkbox]:hover {
+    cursor: pointer;
+}
+
+.checkbox-wrapper-31 input[type=checkbox]:checked+svg .background {
+    fill: #2596be;
+}
+
+.checkbox-wrapper-31 input[type=checkbox]:checked+svg .stroke {
+    stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper-31 input[type=checkbox]:checked+svg .check {
+    stroke-dashoffset: 0;
+}
+
+.data {
+    justify-content: baseline;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    border-radius: 10px;
+    padding: 0.5em;
+    margin: 0.5em;
+    min-height: 5vh;
+    background-color: #ccd8e4;
+    gap: 1rem;
+    -webkit-box-shadow: 19px 18px 28px -10px rgba(204, 216, 228, 1);
+        -moz-box-shadow: 19px 18px 28px -10px rgba(204, 216, 228, 1);
+        box-shadow: 19px 18px 28px -10px rgba(204, 216, 228, 1);
+}
+
+.date-div {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0.4rem;
+    min-height: 5vh;
+    background-color: #ccd8e4;
+    border: 0;
+    -webkit-box-shadow: 19px 18px 28px -10px rgba(204, 216, 228, 1);
+        -moz-box-shadow: 19px 18px 28px -10px rgba(204, 216, 228, 1);
+        box-shadow: 19px 18px 28px -10px rgba(204, 216, 228, 1);
+}
+
+.pen:hover {
+    border-bottom: 1px solid black;
+    border-radius: 0 0 0 3px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    background: none;
+    height: 48px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn .mdi {
+    margin-right: 8px;
+}
+
+.btn-delete {
+    font-size: 16px;
+    color: red;
+}
+
+.btn-delete>.mdi-delete-empty {
+    display: none;
+}
+
+
+.btn-delete:hover>.mdi-delete-empty {
+    display: block;
+}
+
+.btn-delete:hover>.mdi-delete {
+    display: none;
+}
+
+.BTN {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width:  15%;
+    padding: 0;
+    margin: 0;
+}
+
+.typing-container{
+    width: 100%;
+}
+
+.typing-container:disabled{
+    border: 0;
+    background-color: #ccd8e4;
+    margin-left: 5px;
+    font-size: 1rem;
+    user-select: none;
+}
+
+.typing-container:active{
+    border: 0;
+    background-color: #ccd8e4;
+}
+
+.typing-container:enabled{
+    border: 0;
+    border-bottom: 2px solid #7aa7c7;
+    background-color: #ccd8e4;
+}
+
+.input{
+    display: flex;
+    width: 80%;
+}
+
+.input-task{
+    margin-top: 25px;
+}
+
+.mobile-date{
+    display: none;
+}
+.mobile-date2{
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    .date-div{
+        display: none;
+    }
+    .data{
+        width: 100%;
+    }
+    .typing-container{
+        width: 100%;
+    }
+    .mobile-date{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        text-align: end;
+        width: 100%;
+        padding: 0;
+    }
+    .mobile-date2{
+        display:flex;
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: -20%;
+    }
+   
+    .task{
+        flex-direction: column;
+    }
+    
+}

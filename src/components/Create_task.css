@@ -1,0 +1,87 @@
+.input-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-time {
+    display: flex;
+    flex-direction: column;
+}
+
+.addBTN {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-task {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.input-task{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.time-field{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #7aa7c7;
+}
+
+.text-field{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #7aa7c7;
+    font-size: 1rem;
+}
+
+.text-field:focus{
+    border: 0;
+    border-bottom: 2px solid #7aa7c7;
+}
+
+.add {
+    background-color: #e1ecf4;
+    border-radius: 3px;
+    border: 1px solid #7aa7c7;
+    box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #39739d;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 650;
+    line-height: 1.15385;
+    margin: 0;
+    outline: none;
+    padding: 3px .8em;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+
+.add:hover,
+.add:focus {
+    background-color: #b3d3ea;
+    color: #2c5777;
+}
+
+.add:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.add:active {
+    background-color: #a0c7e4;
+    box-shadow: none;
+    color: #2c5777;
+}

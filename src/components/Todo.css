@@ -1,0 +1,76 @@
+
+/* src/components/Todo.css */
+body{
+    background-color: #ccd8e4;
+}
+
+nav {
+    display: flex;
+    background-color: #ffffff;
+    min-height: 5vh;
+}
+
+.todo-container{
+background: #ffffff;
+width: 50%;
+margin: 5em auto;
+border-radius: 15px;
+padding: 20px 10px;
+color: black;
+display: flex;
+flex-direction: column;
+min-height: 35vh;
+align-items: center;
+padding: 25px;
+}
+    
+
+.name{
+    display:flex;
+    flex-direction: column;
+}
+
+.title{
+margin: 0.5em;
+font-size: 2em;
+text-align: center;
+}
+
+.date-input{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.create-task{
+    margin-top: 30px;
+}
+
+.create-input {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.tasks{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.create-task input[type=text] {
+    border: 0;
+    border-bottom: 2px solid #ccd8e4;
+    font-size: 1rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .todo-container{
+        width: 90%;  
+        min-height: 65vh;
+    }
+}
